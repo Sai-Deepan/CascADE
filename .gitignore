@@ -1,0 +1,4 @@
+node_modules/
+.cascade/
+.env
+*.log

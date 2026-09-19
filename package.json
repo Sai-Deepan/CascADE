@@ -1,0 +1,22 @@
+{
+  "name": "cascade-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A local coding workspace with portable AI context",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/*.test.js",
+    "check": "node --check src/server.js && node --check src/core.js && node --check src/providers.js && node --check public/app.js",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "monaco-editor": "0.52.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

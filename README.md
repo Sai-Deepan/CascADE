@@ -1,3 +1,21 @@
+# cascADE
+
+A local coding workspace that preserves task context across AI model switches.
+
+## Run the implemented MVP
+
+New here? Follow the [startup and user guide](STARTUP.md) to launch the app, try the demo, and connect a model.
+
+Requires Node.js 22+. Run `npm install`, then `npm start`, and open **http://127.0.0.1:4317**.
+
+Includes a Monaco editor, repository explorer, persistent task/decision memory, compact handoff previews, Anthropic and Ollama adapters, automatic fallback, token/cost accounting, a command runner, and accept/reject file proposals. The offline demo works without API credentials.
+
+See [setup, configuration, architecture, and MVP boundaries](docs/IMPLEMENTATION.md). Run `npm test` and `npm run check` for backend validation, or `npm run test:e2e` for the browser workflow.
+
+---
+
+## Original concept and research roadmap
+
 The core abstraction:
 
 **User → Workspace → Persistent Context Layer → Agent Router → Any AI Model**
